@@ -2,11 +2,6 @@
   flex-grow: 1;
 }
 
-// form components
-.frm-input {
-
-}
-
 // mobile nav
 .mobile-nav {
   .title-bar {
@@ -105,31 +100,23 @@
 .main-header {
   padding: 20px 0 10px 0;
   margin: 0;
-  background: url(../img/header-bg.jpg);
+  background: url("../img/header-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  .flight-form-title {
-    font-size: rem-calc(36);
+  .main-header-title {
+    padding: 5px 0;
     font-weight: 600;
-    color: $white;
-    letter-spacing: .05rem;
+    font-size: rem-calc(20);
+    color: $light-gray;
+    letter-spacing: .1rem;
+    line-height: 1.4;
   }
 
-  .flight-form-subtitle {
-    padding: 10px 0;
-    font-size: rem-calc(18);
-    color: $medium-light-gray;
-    letter-spacing: .05rem;
-  }
-
-  .flight-form-request-booking {
-    text-transform: uppercase;
-    font-size: rem-calc(14);
-    font-weight: 600;
-    letter-spacing: .05rem;
+  .header-promo {
+    padding: 10px 0 20px 0;
   }
 }
 
