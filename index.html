@@ -13,160 +13,165 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+    <!-- mobile nav -->
+    <section class="mobile-nav hide-for-large">
+      <!-- mobile title bar -->
+      <div class="title-bar">
+        <div class="title-bar-left">
+          <a href="index.html">
+            <img src="img/logo.png" alt="" width="45">
+            <span class="title-bar-title">Quinon</span>
+          </a>
+        </div>
+        <div class="title-bar-right">
+          <button class="menu-icon" type="button" data-open="mobile-side-nav"></button>
         </div>
       </div>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
+      <!-- mobile side nav -->
+      <div id="mobile-side-nav" class="mobile-side-nav off-canvas position-left" data-off-canvas data-auto-focus="false">
+        <div class="mobile-side-nav-logo text-center">
+          <img src="img/logo.png" alt="" width="65">
+        </div>
+        <div class="mobile-sive-nav-menu">
+          <ul class="vertical menu icon-left">
+            <li><a href="pages/user-dashboard.html"><i class="material-icons">person</i><span>My Account</span></a></li>
+            <li><a href=""><i class="material-icons">flight</i><span>Flights</span></a></li>
+            <li><a href="pages/2go-travel.html"><i class="material-icons">directions_boat</i><span>2GO Travel</span></a></li>
+            <li><a href="pages/promos.html"><i class="material-icons">card_giftcard</i><span>Promos</span></a></li>
+            <li><a href="pages/promos.html"><i class="material-icons">live_help</i><span>Support</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- main nav -->
+    <section class="main-nav show-for-large">
+      <div class="top-bar">
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="top-bar-left">
+              <a href="/"><img src="img/logo.png" alt="" width="45"></a>
+              <span class="title-bar-title">Quinon</span>
             </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><a class="is-active" href="/">Flights</a></li>
+                <li><a href="/">2GO Travel</a></li>
+                <li><a href="/">Promos</a></li>
+                <li><a href="/">My Account</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
+    <!-- main header -->
+    <section class="main-header">
+      <div class="grid-container">
+        <div class="main-header-flight-form">
+          <h4 class="show-for-medium">Start your journey with us!</h4>
+          <p class="show-for-medium">Book cheap flights through our interactive booking platform</p>
+          <form class="flight-form" action="/" method="post">
+            <div class="grid-x">
+              <div class="cell medium-6 large-4">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell">
+                    <label>
+                      <select>
+                        <option value="one-way">One Way</option>
+                        <option value="roundtrip">Round Trip</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="cell">
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="material-icons">flight_takeoff</i></span>
+                      <input class="input-group-field" type="text" placeholder="Origin">
+                    </div>
+                  </div>
+                  <div class="cell">
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="material-icons">flight_land</i></span>
+                      <input class="input-group-field" type="text" placeholder="Destination">
+                    </div>
+                  </div>
+                  <div class="cell">
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="material-icons">date_range</i></span>
+                      <input class="input-group-field" type="text" placeholder="Travel Date">
+                    </div>
+                  </div>
+                  <div class="cell small-4">
+                    <input type="text" placeholder="Adults">
+                  </div>
+                  <div class="cell small-4">
+                    <input type="text" placeholder="Children">
+                  </div>
+                  <div class="cell small-4">
+                    <input type="text" placeholder="Infants">
+                  </div>
+                  <div class="cell">
+                    <label>
+                      <select>
+                        <option value="economy">Economy</option>
+                        <option value="business-class">Business Class</option>
+                      </select>
+                    </label>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
+                <a class="button expanded" href="#">Request Booking</a>
               </div>
             </div>
           </form>
         </div>
+      </div>
+    </section>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+    <!-- mobile promo -->
+    <section class="mobile-promo show-for-small-only">
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell">
+            <h3 class="mobile-promo-title">Exclusive Deals!</h3>
+            <p class="mobile-promo-subtitle">Don't miss out on savings with low price flight fares from various airlines</p>
+            <a class="mobile-promo-action" href="#">View All Promos</a>
           </div>
         </div>
       </div>
-    </div>
-    
+    </section>
+
+    <!-- mobile subscribe -->
+    <section class="mobile-subscribe show-for-small-only">
+      <div class="grid-container">
+        <h4 class="mobile-subscribe-title">Get VIP deals straight to your email!</h4>
+        <form class="mobile-subscribe-form" action="index.html" method="post">
+          <div class="grid-x">
+            <div class="cell text-center">
+              <div class="input-group">
+                <span class="input-group-label"><i class="material-icons">mail</i></span>
+                <input class="input-group-field" type="text" placeholder="Email Address">
+              </div>
+            </div>
+          </div>
+          <a class="button expanded" href="#">Subscribe</a>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer-bot">
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell text-center large-text-left">
+            <p class="copyright"><a href="/">Quinon Ticketing Office Inc</a> © 2018</p>
+            <p class="all-rights-reserved">All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/what-input.js"></script>
