@@ -1,0 +1,102 @@
+.grid-container {
+  flex-grow: 1;
+}
+
+// mobile nav
+.mobile-nav {
+  .title-bar {
+    border-bottom: 2px solid $primary;
+    .title-bar-left{
+      a {
+        color: $primary;
+        text-transform: uppercase;
+        font-size: rem-calc(18);
+        font-weight: 600;
+        letter-spacing: .05rem;
+      }
+    }
+  }
+  .mobile-side-nav {
+    background: $white;
+    .mobile-side-nav-logo {
+      padding: 1.5rem 0 1rem 0;
+      margin: 0rem .8rem;
+      border-bottom: 1px dashed $medium-gray;
+    }
+    .mobile-sive-nav-menu {
+      li {
+        text-transform: uppercase;
+        font-size: rem-calc(12);
+        letter-spacing: .05rem;
+      }
+      a {
+        padding: .5rem .7rem;
+        color: $primary;
+      }
+      a:hover {
+        color: smart-scale($primary, 25%, 50%);
+      }
+      span {
+        line-height: 2.1;
+      }
+    }
+  }
+}
+
+// main nav
+.main-nav {
+  border-bottom: 2px solid $primary;
+  .top-bar {
+    .top-bar-left {
+      li {
+        color: $primary;
+        text-transform: uppercase;
+        font-size: rem-calc(20);
+        font-weight: 600;
+        letter-spacing: .05rem;
+      }
+    }
+    .top-bar-right {
+      li {
+        text-transform: uppercase;
+        font-size: rem-calc(13);
+        font-weight: 600;
+        letter-spacing: .05rem;
+      }
+      a {
+        color: $medium-dark-gray;
+      }
+      a:hover {
+        color: smart-scale($medium-dark-gray, 25%, 50%);
+      }
+    }
+  }
+}
+
+// header showcase
+.header-showcase {
+  background: url("../img/showcase-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .header-showcase-title {
+    font-weight: 600;
+    color: smart-scale($primary, 25%, 50%);
+    letter-spacing: .1rem;
+    line-height: 1.2;
+  }
+  .header-showcase-slide-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $medium-dark-gray;
+  }
+  .header-showcase-slide-content {
+    font-weight: 600;
+    color: $medium-dark-gray;
+  }
+  .header-showcase-slide-action {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
