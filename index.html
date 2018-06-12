@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+<<<<<<< HEAD
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,10 +40,71 @@
               <div class="large-4 medium-4 medium-pull-2 cell">
                 <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
               </div>
+=======
+    <!-- default metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- site properties -->
+    <title>Quinon</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- mobile nav -->
+    <section class="mobile-nav show-for-small-only">
+      <!-- mobile title bar -->
+      <div class="title-bar">
+        <div class="title-bar-left">
+          <a href="index.html">
+            <img src="img/logo.png" alt="" width="45">
+            <span class="title-bar-title">Quinon</span>
+          </a>
+        </div>
+        <div class="title-bar-right">
+          <button class="menu-icon" type="button" data-open="mobile-side-nav"></button>
+        </div>
+      </div>
+      <!-- mobile side nav -->
+      <div id="mobile-side-nav" class="mobile-side-nav off-canvas position-left" data-off-canvas data-auto-focus="false">
+        <div class="mobile-side-nav-logo text-center">
+          <img src="img/logo.png" alt="" width="65">
+        </div>
+        <div class="mobile-sive-nav-menu">
+          <ul class="vertical menu icon-left">
+            <li><a href="pages/user-dashboard.html"><i class="material-icons">person</i><span>My Account</span></a></li>
+            <li><a href=""><i class="material-icons">flight</i><span>Flights</span></a></li>
+            <li><a href="pages/2go-travel.html"><i class="material-icons">directions_boat</i><span>2GO Travel</span></a></li>
+            <li><a href="pages/promos.html"><i class="material-icons">card_giftcard</i><span>Promos</span></a></li>
+            <li><a href="pages/promos.html"><i class="material-icons">live_help</i><span>Support</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- main nav -->
+    <section class="main-nav data-sticky-container show-for-medium">
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="top-bar-left">
+              <img src="img/logo.png" alt="" width="45">
+              <span class="title-bar-title">Quinon</span>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><a href="/">Flights</a></li>
+                <li><a href="/">2GO Travel</a></li>
+                <li><a href="/">Promos</a></li>
+                <li><a href="/">My Account</a></li>
+              </ul>
+>>>>>>> a859a1b64ab1ee8de025416b8e9c53cf3fd1a2b7
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
 
       <div class="grid-x grid-padding-x">
         <div class="large-8 medium-8 cell">
@@ -165,6 +227,257 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+=======
+    </section>
+
+    <!-- main header -->
+    <section class="main-header">
+      <div class="grid-container">
+        <div class="grid-x align-middle">
+          <div class="cell medium-6 large-4 large-offset-1">
+            <div class="flight-form-wrapper">
+              <form class="flight-form" action="index.html" method="post">
+                <div class="grid-x grid-padding-x">
+                  <div class="cell small-6 medium-6 large-6">
+                    <label>
+                      <select>
+                        <option value="one-way">One Way</option>
+                        <option value="roundtrip">Round Trip</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="cell small-6 medium-6 large-6">
+                    <label>
+                      <select>
+                        <option value="economy">Economy</option>
+                        <option value="business-class">Business Class</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="cell">
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="material-icons">flight_takeoff</i></span>
+                      <input class="input-group-field" type="text" placeholder="Origin">
+                    </div>
+                  </div>
+                  <div class="cell">
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="material-icons">flight_land</i></span>
+                      <input class="input-group-field" type="text" placeholder="Destination">
+                    </div>
+                  </div>
+                  <div class="cell">
+                    <div class="input-group">
+                      <span class="input-group-label"><i class="material-icons">date_range</i></span>
+                      <input class="input-group-field" type="text" placeholder="Travel Date">
+                    </div>
+                  </div>
+                  <div class="cell small-4 medium-4 large-4">
+                    <input type="text" placeholder="Adults">
+                  </div>
+                  <div class="cell small-4 medium-4 large-4">
+                    <input type="text" placeholder="Children">
+                  </div>
+                  <div class="cell small-4 medium-4 large-4">
+                    <input type="text" placeholder="Infants">
+                  </div>
+                  <div class="cell">
+                    <a class="button expanded" href="#">Request Booking</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cell medium-5 medium-offset-1 large-5 large-offset-1 show-for-medium">
+            <div class="grid-x">
+              <div class="cell medium-12 large-12">
+                <h1 class="main-header-title">Start you journey with us!</h1>
+              </div>
+              <div class="cell medium-10 medium-offset-1 large-9 large-offset-3">
+                <div class="orbit main-header-slide" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                  <div class="orbit-wrapper">
+                    <ul class="orbit-container">
+                      <li class="is-active orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="https://placehold.it/500x300" alt="Space">
+                          <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                        </figure>
+                      </li>
+                      <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="https://placehold.it/500x300" alt="Space">
+                          <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                        </figure>
+                      </li>
+                      <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="https://placehold.it/500x300" alt="Space">
+                          <figcaption class="orbit-caption">Encapsulating</figcaption>
+                        </figure>
+                      </li>
+                      <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="https://placehold.it/500x300" alt="Space">
+                          <figcaption class="orbit-caption">Outta This World</figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- showcase -->
+    <section class="showcase">
+      <div class="grid-container">
+        <div class="grid-x text-center">
+          <div class="cell medium-12 large-12">
+            <h3 class="showcase-title">Why Book with Us?</h3>
+          </div>
+          <div class="cell medium-6 large-3" style="background:pink;">
+            <img src="https://placehold.it/120x120" alt="">
+            <h4>Best Purchase Guarantee</h4>
+            <p>We strive to provide our customers excellent prices along with the best selection among our airline partners.</p>
+          </div>
+          <div class="cell medium-6 large-3" style="background:red;">
+            <img src="https://placehold.it/120x120" alt="">
+            <h4>Best Purchase Guarantee</h4>
+            <p>We strive to provide our customers excellent prices along with the best selection among our airline partners.</p>
+          </div>
+          <div class="cell medium-6 large-3" style="background:blue;">
+            <img src="https://placehold.it/120x120" alt="">
+            <h4>Best Purchase Guarantee</h4>
+            <p>We strive to provide our customers excellent prices along with the best selection among our airline partners.</p>
+          </div>
+          <div class="cell medium-6 large-3" style="background:green;">
+            <img src="https://placehold.it/120x120" alt="">
+            <h4>24/7 Support</h4>
+            <p>Our customer service ensures you receive the help and support you need.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe -->
+    <section class="subscribe">
+      <div class="grid-container">
+        <div class="grid-x align-middle">
+          <div class="cell medium-6 medium-offset-2 large-6 large-offset-2">
+            <h3>Don't miss out on the following:</h3>
+            <p>VIP Deals, Promos and etc</p>
+          </div>
+          <div class="cell medium-6 medium-offset-4 large-6 large-offset-4">
+            <form class="subscribe-form" action="index.html" method="post">
+              <div class="grid-x">
+                <div class="cell">
+                  <div class="input-group">
+                    <span class="input-group-label"><i class="material-icons">mail</i></span>
+                    <input class="input-group-field frm-input" type="text" placeholder="Email Address">
+                    <div class="input-group-button">
+                      <input type="submit" class="button" value="Subscribe">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats -->
+    <section class="stats">
+      <div class="grid-container">
+        <div class="grid-x align-middle">
+          <div class="cell medium-6 large-6 text-center" style="background:red;">
+            <img src="https://placehold.it/350x550" alt="">
+          </div>
+          <div class="cell medium-6 large-6" style="background:blue;">
+            <div class="grid-x grid-padding-x grid-padding-y">
+              <div class="cell">
+                <h2>Happy Travellers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus ante ut quam pulvinar blandit.</p>
+              </div>
+              <div class="cell medium-6 large-6 text-center">
+                <img src="https://placehold.it/250x200" alt="">
+              </div>
+              <div class="cell medium-6 large-6 text-center">
+                <img src="https://placehold.it/250x200" alt="">
+              </div>
+              <div class="cell medium-6 large-6 text-center">
+                <img src="https://placehold.it/250x200" alt="">
+              </div>
+              <div class="cell medium-6 large-6 text-center">
+                <img src="https://placehold.it/250x200" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer-top">
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell medium-6 large-3">
+            <img src="" alt="">
+            <ul class="menu vertical">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="cell medium-6 large-3">
+            a
+          </div>
+          <div class="cell text-center medium-6 large-3">
+            <h4>Airline Partners</h4>
+            <div class="grid-x grid-padding-y small-up-3 medium-up-4 large-up-3">
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/80x50" alt=""></div>
+            </div>
+          </div>
+          <div class="cell text-center medium-6 large-3">
+            <h4>Payment Accepted</h4>
+            <div class="grid-x text-center grid-padding-y small-up-3 medium-up-4 large-up-3">
+              <div class="cell"><img src="http://via.placeholder.com/75x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/75x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/75x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/75x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/75x50" alt=""></div>
+              <div class="cell"><img src="http://via.placeholder.com/75x50" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bot">
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell text-center large-text-left">
+            <p class="copyright"><a href="/">Quinon Ticketing Office Inc</a> © 2018</p>
+            <p class="all-rights-reserved">All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.js"></script>
+>>>>>>> a859a1b64ab1ee8de025416b8e9c53cf3fd1a2b7
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,5 +1,10 @@
 .DS_Store
+<<<<<<< HEAD
 bower_components
 node_modules
 npm-debug.log
 css
+=======
+npm-debug.log
+node_modules
+>>>>>>> a859a1b64ab1ee8de025416b8e9c53cf3fd1a2b7

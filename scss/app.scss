@@ -4,6 +4,12 @@
 @import 'foundation';
 @import 'motion-ui';
 
+<<<<<<< HEAD
+=======
+// material design icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+>>>>>>> a859a1b64ab1ee8de025416b8e9c53cf3fd1a2b7
 @include foundation-global-styles;
 // @include foundation-grid;
 // @include foundation-flex-grid;
@@ -50,3 +56,8 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+<<<<<<< HEAD
+=======
+
+@import 'custom';
+>>>>>>> a859a1b64ab1ee8de025416b8e9c53cf3fd1a2b7
